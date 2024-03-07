@@ -1,0 +1,41 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: white;
+}
+.Centrar{
+    padding: 10px 0px;
+	background-color: rgb(14, 41, 117);
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+
+	display: block;
+	flex-direction: column;
+	justify-content:first baseline;
+}
+p, h1{
+    display: block;
+    text-align: center;
+    color: white;
+}
+
+table , table :not(:first-child) * {
+    border: 2px solid rgb(178, 200, 226);;
+    background-color: rgb(29, 56, 114);
+    margin: 0 20pc;
+}
+
+caption{
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+table thead * , table tbody *  {
+    padding: 10px 20px;
+}
+td{
+    text-align: left;
+}

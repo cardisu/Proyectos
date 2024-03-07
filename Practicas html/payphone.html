@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <script>
+        window.onload = function() {
+    payphone.Button({
+
+    //token obtenido desde la consola de developer
+    token: "TU-TOKEN-DE-AUTENTICACION",
+
+    //PARÁMETROS DE CONFIGURACIÓN
+    btnHorizontal: true,
+    btnCard: true,
+
+    createOrder: function(actions){
+    //Se ingresan los datos de la transaccion ej. monto, impuestos, etc
+
+    return actions.prepare({
+
+                    amount: 100,
+                    amountWithoutTax: 100,
+                    currency: "USD",
+                    clientTransactionId: "identificador-único",
+                    lang:"es"
+
+                }).then(function(paramlog){
+                    console.log(paramlog);
+                    return paramlog;
+                }).catch(function(paramlog2){
+                    console.log(paramlog2);
+                    return paramlog2;
+                });
+            },
+
+            onComplete: function(model, actions){
+            }
+        }).render("#pp-button");
+    }
+    </script>
+    <div id="pp-button"></div>
+</body>
+</html>

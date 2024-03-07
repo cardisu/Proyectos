@@ -7,6 +7,7 @@
     <title>Cosper</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/logo.PNG" type="icono">
+    <script src="https://kit.fontawesome.com/7de16b405b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -70,44 +71,86 @@
 
     <!--Seccion de diapositivas-->
 
-    <div class="slider">
-        <div class="slider-content">
-            <div class="swiper-slider">
-                <div class="slider-text1">
-                    <p>Potencia tu mirada con nuestros rímeles unicos</p>
-                    <p>Logra pestañas deslumbrantes con nuestro colección de alta calidad.</p>
+    <div id="Scroll-menu">
+        <div id="content-Items">
+            <div class="itemCarrusel" id="card1">
+                <div class="cardItems">
+                    <img src="images/rimel2.jpg" alt="rimel-card1">
+
+                    <div class="text">
+                        <p>¡Potencia tu mirada con nuestros rímeles únicos!</p>
+                    </div>
                 </div>
-    
-                <div class="botones">
-                    <a href="#" class="slider-btn-1">Explorar!</a>
+                
+                <div class="arrows">
+                    <a href="#card4">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </a>
+                    <a href="#card2">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
                 </div>
+            </div>
     
-                <div class="slider-img">
-                    <img src="images/rimel.jpg" alt="img-rimel">
+            <div class="itemCarrusel" id="card2">
+                <div class="cardItems" >
+                    <img src="images/gift.jpg" alt="gift-card2">
+                </div>
+                
+                <div class="arrows">
+                    <a href="#card1">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </a>
+                    <a href="#card3">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
                 </div>
             </div>
     
-            <div class="swiper-slider">
-                <div class="slider-text2">
-                    <p>¿Buscas el regalo perfecto?</p>
-                    <p>¡Tenemos la solución! Nuestras tarjetas de regalo son la opción perfecta
-                        para sorprender a tus seres queridos.</p>
+            <div class="itemCarrusel" id="card3">
+                <div class="cardItems">
+                    <img src="images/cuidado facial.jpg" alt="cuidadoFacial-card3">
                 </div>
-    
-                <div class="botones">
-                    <a href="#" class="slider-btn-2">Vamos!</a>
-                </div>
-    
-                <div class="slider-img">
-                    <img src="images/gift.jpg" alt="img-gift">
+                
+                <div class="arrows">
+                    <a href="#card2">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </a>
+                    <a href="#card4">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
                 </div>
             </div>
+    
+            <div class="itemCarrusel" id="card4">
+                <div class="cardItems">
+                    <img src="images/Maquillaje.jpg" alt="maquillaje-card4">
+                </div>
+                
+                <div class="arrows">
+                    <a href="#card3">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </a>
+                    <a href="#card1">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+    
         </div>
-
-        
+    <!--Puntos de diapositiva-->
+        <div id="points-Cards">
+            <a href="#card1">•</a>
+            <a href="#card2">•</i></a>
+            <a href="#card3">•</i></a>
+            <a href="#card4">•</i></a>
+        </div>
     </div>
-
+    
     <main>
+        <div id="section-title">
+            <h1>CATEGORIAS</h1>
+        </div>
         <div class="menu-section">
             <section id="perfumes">
                 <img src="images/perfume 1.jpg" alt="perfumes">

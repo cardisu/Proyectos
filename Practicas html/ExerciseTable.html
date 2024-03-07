@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Practicar Carlos</title>
+		<link rel="stylesheet" href="estiloTabla.css">
+	</head>
+
+	<body>
+		<form>
+			<!-- your code here -->
+			<table class="tablePractice">
+				<caption>
+					Como enamorar a mi amorcito
+				</caption>
+				<!--DATOS-->
+				<tr>
+					<th>Nombre</th>
+					<th>Valores</th>
+				</tr>
+
+				<tr>
+					<td>Nombre</td>
+					<td><input type="text" name="Nombre" id="Name"/></td>
+				</tr>
+
+				<tr>
+					<td>Sexo</td>
+					<td id="bodyIndex">
+						<div>
+							<label for="Masculino">Masculino:</label>
+							<input type="radio" name="sex" id="Masculino value="male" />
+						</div>
+						<div>
+							<label for="Femenino">Femenino:</label>
+							<input type="radio" name="sex" id="Femenino" value="female" />
+						</div>
+					</td>
+				</tr>
+
+				<tr>
+					<td>Color de ojos</td>
+					<td>
+						<select name="eyeColor" id="eyeColor">
+							<option value="verde">verde</option>
+							<option value="rojo">rojo</option>
+							<option value="azul">azul</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Marque todas las que aplique</td>
+					<td id="bodyIndex">
+						<div>
+							<label for="six">Over 6 feet tall</label>
+							<input type="checkbox" name="apply" id="six" />
+						</div>
+
+						<div>
+							<label for="200pound">Over 200 pounds</label>
+							<input type="checkbox" name="apply" id="200pound" />
+						</div>
+					</td>
+				</tr>
+
+				<tr>
+					<td colspan="2" id="textArea">
+						<label for="Descripcion">Describe tu habilidad atletica</label>
+						<textarea name="Descripcion" id="Descripcion" cols="40" rows="10"></textarea>
+						<button type="submit">Enviar mi informacion</button>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

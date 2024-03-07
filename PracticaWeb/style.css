@@ -7,6 +7,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -16,6 +17,9 @@ body{
     margin: 0;
 }
 
+.a{
+    text-decoration: none;
+}
 
 /*Diseño de header */
 
@@ -139,22 +143,101 @@ header {
     font-size: 25px;
 }
 
-.slider-img{
-    width: 100%;
-    height: auto;
+#Scroll-menu{
+    margin: 10px 0;
 }
 
-.slider-content{
+#content-Items{
     display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    height: 500px;
+    width:auto;
     overflow: hidden;
-    width: 1400px;
-    height: 720px;
-    margin: 0 auto;
-}
-.swiper-slider{
-    flex: 0 0 100%;
 }
 
-.slider-text1, .slider-text2 {
-    z-index: -2;
+#content-Items img{
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.itemCarrusel{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.cardItems{
+    height: 100%;
+}
+
+.text {
+    position: absolute;
+    top: 50px;
+    left: 80px;
+    width: 60%;
+    height: 30%;
+    display: flex;
+    justify-content: flex-start;
+    color: #0c0b0b; /* Color del texto */
+    text-align: center;
+    z-index: 1; /* Coloca el texto encima de la imagen */
+}
+
+.text p{
+    font-size: 3.5rem;
+    font-weight: 650;
+}
+
+
+.arrows{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.arrows a {
+    font-size: 2rem;
+    color: #ffffff; /* Color predeterminado */
+    text-decoration: none;
+    opacity: 0.2;
+    transition: color 0.3s ease-in-out;
+}
+
+.arrows:hover a {
+    opacity: 1;
+}
+
+.arrows a:hover {
+    color: #ec4141; /* Color al pasar el ratón */
+}
+
+#points-Cards{
+    background-color: #bbb;
+    opacity: 0.5;
+    display: flex;
+    position:sticky;
+    margin-top: -40px;
+    justify-content: space-around;
+    
+}
+
+#points-Cards > a{
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #000000; /* Color predeterminado */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    z-index: 1;
+}
+
+#points-Cards > a:hover,
+#points-Cards > a.active {
+    color: #ec4141; /* Color al pasar el ratón o activo */
 }

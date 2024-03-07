@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer Pagina Web</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="menu container">
+            <img class="logo-1" src="images/logo.PNG" alt="">
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="images/menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <div class="menu-1">
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Tratamiento Facial</a></li>
+                        <li><a href="#">Perfumes</a></li>
+                        <li><a href="#">Capilar</a></li>
+                    </ul>
+                </div>
+                <img class="logo-2" src="images/logo.PNG" alt="">
+
+                <div class="menu-2">
+                    <ul>
+                        <li><a href="#">Marcas</a></li>
+                    </ul>
+                    <div class="Marcas">
+                        <a href="#">
+                            <div class="Marca" id="Avon">
+                                <img src="images/avon.png" alt="">
+                                <label for="Marca">Avon</label>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="Marca" id="Lbel">
+                                <img src="images/lbel.jpg" alt="">
+                                <label for="Marca">Lbel</label>                                
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="Marca" id="Esika">
+                                <img src="images/esika.png" alt="" id="esika">
+                                <label for="Marca">Ezika</label>                                
+                            </div>
+                        </a>
+                    </div>
+
+
+                </div>
+            </nav>
+        </div>
+<!--Nota: Botones con el mismo nombre-->
+        <div class="header-content container">
+            <div class="swiper mySwiper-1">
+                <div class="swiper-wrapper">
+                    
+                    <div class="swiper-slider">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h1>PERFUME</h1>
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam tempora ratione praesentium est! Placeat optio, alias voluptatibus repellendus est, quam ut doloremque quo doloribus nam ullam eos ipsa facere voluptates!
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-1">Comprar</a>
+                                    <a href="#" class="btn-1">Menu</a>
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="images/perfume 2.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slider">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h1>Tratamientos</h1>
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam tempora ratione praesentium est! Placeat optio, alias voluptatibus repellendus est, quam ut doloremque quo doloribus nam ullam eos ipsa facere voluptates!
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-1">Comprar</a>
+                                    <a href="#" class="btn-1">Menu</a>
+                                </div>
+                            </div>
+
+                            <div class="slider-img">
+                                <img src="images/tratamientos.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slider">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h1>Capilar</h1>
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam tempora ratione praesentium est! Placeat optio, alias voluptatibus repellendus est, quam ut doloremque quo doloribus nam ullam eos ipsa facere voluptates!
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-1">Comprar</a>
+                                    <a href="#" class="btn-1">Menu</a>
+                                </div>
+                            </div>
+
+                            <div class="slider-img">
+                                <img src="images/capilares.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+    </header>
+<!-- Scroll y presentacion -->
+    <main class="products">
+        <div class="tabs container">
+            <!--1 scroll-->
+            <input type="radio" name="tabs" id="tab1" checked="checked" class="tabInput" value="1">
+            <label for="tab1">Perfumes</label>
+            <div class="tab">
+                <div class="swiper MySwiper-2" id="swiper1">
+                    <div class="swiper-wrapper">
+                        
+                        <div class="swiper-slider">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="images/perfumes3.jpg" alt="">
+                                </div>
+                                <div class="product-text">
+                                    <h4>Producto</h4>
+                                    <p>Calidad Alta</p>
+                                    <span class="price">$80.00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slider">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Avon</h4>
+                                    <img src="images/perfumes3.jpg" alt="">
+                                </div>
+                                <div class="product-text">
+                                    <h4>Producto</h4>
+                                    <p>Calidad Alta</p>
+                                    <span class="price">$80.00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slider">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>LBEL</h4>
+                                    <img src="images/perfumes3.jpg" alt="">
+                                </div>
+                                <div class="product-text">
+                                    <h4>Producto</h4>
+                                    <p>Calidad Alta</p>
+                                    <span class="price">$80.00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slider">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Esika</h4>
+                                    <img src="images/perfumes3.jpg" alt="">
+                                </div>
+                                <div class="product-text">
+                                    <h4>Producto</h4>
+                                    <p>Calidad Alta</p>
+                                    <span class="price">$80.00</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <!--2 scroll-->
+            <input type="radio" name="tabs" id="tab2" checked="checked" class="tabInput" value="2">
+            <label for="tab2">Tratamientos</label>
+            <div class="tab">
+                <div class="swiper MySwiper-2" id="swiper2">
+                    <div class="swiper-wrapper">
+                        
+                        <div class="swiper-slider">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="images/tratamientos.jpg" alt="">
+                                </div>
+                                <div class="product-text">
+                                    <h4>Producto</h4>
+                                    <p>Calidad Alta</p>
+                                    <span class="price">$80.00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slider">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Avon</h4>
+                                    <img src="images/tratamientos.jpg" alt="">
+                                </div>
+                                <div class="product-text">
+                                    <h4>Producto</h4>
+                                    <p>Calidad Alta</p>
+                                    <span class="price">$80.00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slider">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>LBEL</h4>
+                                    <img src="images/tratamientos.jpg" alt="">
+                                </div>
+                                <div class="product-text">
+                                    <h4>Producto</h4>
+                                    <p>Calidad Alta</p>
+                                    <span class="price">$80.00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slider">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Esika</h4>
+                                    <img src="images/tratamientos.jpg" alt="">
+                                </div>
+                                <div class="product-text">
+                                    <h4>Producto</h4>
+                                    <p>Calidad Alta</p>
+                                    <span class="price">$80.00</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <!--3 scroll-->
+            <input type="radio" name="tabs" id="tab3" checked="checked" class="tabInput" value="3">
+            <label for="tab3">Capilares</label>
+            <div class="tab">
+                <div class="swiper MySwiper-2" id="swiper3">
+                    <div class="swiper-wrapper">
+                        
+                        <div class="swiper-slider">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="images/capilares.jpg" alt="">
+                                </div>
+                                <div class="product-text">
+                                    <h4>Producto</h4>
+                                    <p>Calidad Alta</p>
+                                    <span class="price">$80.00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slider">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Avon</h4>
+                                    <img src="images/capilares.jpg" alt="">
+                                </div>
+                                <div class="product-text">
+                                    <h4>Producto</h4>
+                                    <p>Calidad Alta</p>
+                                    <span class="price">$80.00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slider">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>LBEL</h4>
+                                    <img src="images/capilares.jpg" alt="">
+                                </div>
+                                <div class="product-text">
+                                    <h4>Producto</h4>
+                                    <p>Calidad Alta</p>
+                                    <span class="price">$80.00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slider">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Esika</h4>
+                                    <img src="images/capilares.jpg" alt="">
+                                </div>
+                                <div class="product-text">
+                                    <h4>Producto</h4>
+                                    <p>Calidad Alta</p>
+                                    <span class="price">$80.00</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+    </main> 
+    <!--Section Information-->
+    <section class="info container">
+        <div class="info-img">
+            <img src="images/perfume 1.jpg" alt="">
+        </div>
+        <div class="info-text">
+            <h2>Informacion</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores magni repudiandae, aut corrupti autem enim quis repellat voluptatum hic sint doloribus accusamus voluptatem quaerat quisquam eveniet quod iste ea dolorem!
+            </p>
+            <a href="#" class="btn2">Mas informacion</a>
+        </div>
+    </section>
+    <!--Section Horario-->
+    <section class="Horario">
+        <div class="Horario-info container">
+            <h2>Horario</h2>
+           <!--Contenodres de informacion-->
+            <div class="horario-text">
+                <div class="text">
+                    <h4>Direccion</h4>
+                    <p>
+                        Lemon esquizi
+                    </p>
+                    <p>
+                        IIZI PICI
+                    </p>
+                </div>
+
+                <div class="text">
+                    <h4>Horario</h4>
+                    <p>
+                        Lunes - viernes: 9:00 am - 19:00 pm
+                    </p>
+                    <p>
+                        Sabados - Domingos: 9:00 am - 19:00 pm
+                    </p>
+                </div>
+
+                <div class="text">
+                    <h4>Telefono</h4>
+                    <p>
+                        0985746312
+                    </p>
+                </div>
+
+                <div class="text">
+                    <h4>Redes Sociales</h4>
+                    <p>
+                        WhatsApp
+                    </p>
+                    <p>
+                        Tik Tok
+                    </p>
+                    <p>
+                        Instagram
+                    </p>
+                </div>
+                <!--Debajo de esto se puede agregar mas secciones - Codigo de referencia
+
+                <div class="Marcas">
+                        <a href="#">
+                            <div class="Avon">
+                                <img src="images/avon.png" alt="">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="Lbel">
+                                <img src="images/lbel.jpg" alt="">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="Esika">
+                                <img src="images/esika.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                -->
+            </div>
+        </div>
+    </section>
+
+    <!--Section Maps-->
+    <section class="maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.8602654777637!2d-79.89036413110861!3d-2.206434392854467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6f5762944407%3A0xbf508f7bbc99d7ab!2sYambal%20Colonias!5e0!3m2!1ses!2sec!4v1708699254453!5m2!1ses!2sec" width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+ <!--Section Links-->
+    <footer class="footer container">
+        <img src="images/logo.PNG" alt="">
+        <!--Enlace para pagina web-->
+        <div class="links">
+            <h4>Pagina web</h4>
+            <ul>
+                <li><a href="https://www.cosmeticosperfumescosper.com/" target="_blank">Pagina Web</a></li>
+                <li><a href="https://www.instagram.com/cosper_ecuador?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a></li>
+            </ul>
+        </div>
+        <!--Enlace para paginas adicionales-Codigo de referencia
+        <div class="links">
+            <h4>Pagina web</h4>
+            <ul>
+                <li><a href="https://www.cosmeticosperfumescosper.com/">Pagina Web</a></li>
+            </ul>
+        </div>
+        -->
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script href="app.js"></script>
+</body>
+
+</html>
