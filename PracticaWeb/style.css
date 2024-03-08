@@ -318,6 +318,7 @@ header {
 .map-info{
     padding: 20px 20px 80px;
     margin-bottom: 10px;
+    min-width: 200px;
     height: 500px;
     border-top: 2px solid rgb(197, 180, 125);
     border-bottom: 2px solid rgb(197, 180, 125);         
@@ -333,6 +334,7 @@ header {
 
 .frame-map{
     min-height: 100%;
+    width: 100%;
     align-items: center;
 }
 
