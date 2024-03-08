@@ -25,30 +25,44 @@ header {
     display:flex;
     flex-flow: column;
     padding: 10px;
-    min-width: 200px;
-    height: 100%;           
+    min-width: 200px;          
+}
+
+.perfil{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .header-section{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     list-style: none;
-    margin:10px;
+    margin-top:10px;
+    min-width:150px;
 }
 
 .header-section ul, .header-section li{
     font-family: "Caveat", cursive;
     font-size: 20px;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 20px;    
 }
 
+.header-title{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width:150 ;
+    min-height: 100px;
+}
 .header-title h1{
     font-family: "Merriweather", serif,regular;
     font-size: 50px;
-    justify-content: center;
-    display: flex;    
+    text-align: center;
+        
 }
 
 #logo{
@@ -58,17 +72,15 @@ header {
 
 .header-profile {
     display: flex;
-    list-style: none;
-    justify-content: end;
-    padding: 10px;   
+    flex-direction: row;
+    flex-wrap: wrap;
+
 }
 
 .profile{
     padding: 10px;
     display: flex;
-    width: 10%;
-    gap: 20px;
-    margin-top: -120px;
+    gap: 20px;  
 }
 
 .profile label{
@@ -79,15 +91,15 @@ header {
 .buscar{
     padding: 5px 15px;
     display: flex;
-    height: 45px;
-    margin-top: -110px;
 }
 
 .buscar input[type="text"]{
     font-size: 15px;
     border: 0;
     background-color: transparent;
-    width: 200px;
+    width: auto;
+    margin-top: 25px;
+    max-height: auto;
     outline: none;
     border-bottom: 1px solid black;
 }
@@ -106,6 +118,7 @@ header {
     border: 1px solid black;
     border-radius: 10px;
     background-color: white;
+    min-width: 180px;
 }
 
 .menu-1 ul {
@@ -320,7 +333,6 @@ header {
 
 .frame-map{
     min-height: 100%;
-    width: 100%;   
     align-items: center;
 }
 
