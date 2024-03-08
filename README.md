@@ -1,2 +1,2 @@
 # Proyectos
-Este espacio lo usare para mis practicas y proyectos personales
+Espacio de dedicado a un aplicativo web utilizando angular como front end y para el backend estoy pensando en utilizar asp.net 
