@@ -4,7 +4,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
@@ -13,7 +12,6 @@
 body{
     background:linear-gradient(to right, rgb(231, 177, 126), rgb(250, 250, 247));
     font-family: "Open Sans", sans-serif;
-    height: 100%;
     margin: 0;
 }
 
@@ -27,12 +25,14 @@ header {
     display:flex;
     flex-flow: column;
     padding: 10px;
-    width: 100%;
+    min-width: 200px;
     height: 100%;           
 }
 
 .header-section{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     list-style: none;
     margin:10px;
 }
@@ -92,13 +92,28 @@ header {
     border-bottom: 1px solid black;
 }
 
+/*estilo menu principal*/
 .header-menu-content{
     background-color: rgb(228, 33, 179);
+    min-width:200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex: content;
 }
+
 .header-menu nav{
     border: 1px solid black;
     border-radius: 10px;
     background-color: white;
+}
+
+.menu-1 ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: auto;
+    padding: 10px;
 }
 
 .menu-1 ul *, .menu-1 li *{
@@ -112,6 +127,7 @@ header {
 }
 .header-menu,.header-menu *{
     display: flex;
+    flex-direction: row;
     list-style: none;
     margin:10px 10px;
     justify-content: center;
@@ -125,7 +141,7 @@ header {
 .menu-1 select{
     border: none;
 }
-
+/*estilo subtitulo*/
 .header-subtitle{
     border-top: 2px solid black;
     border-bottom: 2px solid black;
@@ -138,12 +154,16 @@ header {
     list-style: none;
     margin:10px 5px;
     justify-content: center;
+    text-align: center;
     font-family: "Lora", serif;
     font-size: 25px;
 }
 
 #Scroll-menu{
     margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    flex: content;
 }
 
 #content-Items{
@@ -151,13 +171,13 @@ header {
     flex-direction: column;
     flex-wrap:wrap;
     height: 602px;
-    min-width: 980px;
+    min-width: 200px;
     overflow: hidden;
 }
 
 #content-Items img{
-    min-width: 100%;
-    height: 100%;
+    width: 100%;
+    min-height: 100%;
     object-fit: cover;
 }
 
@@ -286,7 +306,6 @@ header {
     padding: 20px 20px 80px;
     margin-bottom: 10px;
     height: 500px;
-    min-width: 980px;
     border-top: 2px solid rgb(197, 180, 125);
     border-bottom: 2px solid rgb(197, 180, 125);         
 }
