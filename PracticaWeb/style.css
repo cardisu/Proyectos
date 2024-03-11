@@ -65,11 +65,6 @@ header {
         
 }
 
-#logo{
-    width: 40px;
-    height: 40px;
-}
-
 .header-profile {
     display: flex;
     flex-direction: row;
@@ -186,22 +181,23 @@ header {
     height: 602px;
     min-width: 200px;
     overflow: hidden;
+    position: relative;    
 }
 
-#content-Items img{
+.cardItems img{
     width: 100%;
     min-height: 100%;
-    object-fit: cover;
+    object-fit:cover;
 }
 
 .itemCarrusel{
     height: 100%;
     width: 100%;
-    position: relative;
 }
 
 .cardItems{
     height: 100%;
+    width: 100%;
 }
 
 .text {
@@ -222,15 +218,17 @@ header {
     font-weight: 650;
 }
 
-
 .arrows{
     position: absolute;
     top: 0;
-    height: 100%;
+    min-height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.arrows i{
     padding: 0 20px;
 }
 
@@ -239,15 +237,13 @@ header {
     color: #ffffff; /* Color predeterminado */
     text-decoration: none;
     opacity: 0.2;
-    transition: color 0.3s ease-in-out;
 }
 
-.arrows:hover a {
-    opacity: 1;
-}
 
 .arrows a:hover {
     color: #ec4141; /* Color al pasar el ratón */
+    font-size: 40px;
+    opacity: 1;
 }
 
 #points-Cards{
@@ -334,7 +330,7 @@ header {
 
 .frame-map{
     min-height: 100%;
-    min-width: 100%;
+    width: 100%;
     align-content: center;
 }
 
