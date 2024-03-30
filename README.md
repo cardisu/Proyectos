@@ -1,2 +1,2 @@
 # Proyectos
-Este espacio lo usare para mis practicas y proyectos personales
+Esta seccion es dedicada a la creacion y practica de una pagina web utilizando html, css y javascritp

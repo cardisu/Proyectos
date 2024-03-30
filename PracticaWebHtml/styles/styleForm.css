@@ -1,0 +1,275 @@
+@import url(font.css);
+
+/*Estructura de body e imagines*/
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    background:linear-gradient(to right, rgb(231, 177, 126), rgb(250, 250, 247));
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+}
+
+.a{
+    text-decoration: none;
+}
+
+.main{
+    margin: 0 10px;
+    padding: 0 10px;
+}
+/*Diseño de header */
+
+header {
+    background:linear-gradient(to right, rgb(231, 177, 126), rgb(250, 250, 247));
+    display:flex;
+    flex-flow: column;
+    padding: 10px;
+    min-width: 200px;          
+}
+
+.perfil{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header-section{
+    display: flex;
+    list-style: none;
+    margin-top:10px;
+    min-width:150px;
+}
+
+.header-section ul, .header-section li{
+    font-family: "Caveat", cursive;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;    
+}
+
+.header-title{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width:150 ;
+    min-height: 100px;
+}
+.header-title h1{
+    font-family: "Merriweather", serif,regular;
+    font-size: 50px;
+    text-align: center;
+        
+}
+
+.header-profile {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.profile{
+    padding: 10px;
+    display: flex;
+    gap: 20px;  
+}
+
+.profile label{
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.buscar{
+    padding: 5px 15px;
+    display: flex;
+}
+
+.buscar input[type="text"]{
+    font-size: 15px;
+    border: 0;
+    background-color: transparent;
+    width: auto;
+    margin-top: 25px;
+    max-height: auto;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+
+/*estilo menu principal*/
+.header-menu-content{
+    background-color: rgb(228, 33, 179);
+    min-width:200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex: content;
+}
+
+.header-menu nav{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    min-width: 180px;
+}
+
+.menu-1 ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: auto;
+    padding: 10px;
+}
+
+.menu-1 ul *, .menu-1 li *{
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+}
+
+.menu-1 ul *:hover{
+    color: red;
+}
+.header-menu,.header-menu *{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin:10px 10px;
+    justify-content: center;
+}
+
+.menu-1 select option:first-child{
+    display: none;
+    visibility: hidden;
+}
+
+.menu-1 select{
+    border: none;
+}
+/*estilo subtitulo*/
+.header-subtitle{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    background-color: aliceblue;
+    width: 100%;
+}
+
+.header-subtitle p{
+    display: flex;
+    list-style: none;
+    margin:10px 5px;
+    justify-content: center;
+    text-align: center;
+    font-family: "Lora", serif;
+    font-size: 25px;
+}
+
+/*Estilo de footer*/
+#footerPage{
+    margin: 10px 10px;
+}
+
+#info-cosper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 20px ;
+    padding-bottom: 20px;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+
+.sobre-nosotros h4{
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
+.sobre-nosotros ul li{
+    padding: 8px 0 ;
+    font-size: 18px;
+    
+}
+
+.sobre-nosotros li:hover *{
+    cursor: pointer;
+    color: #ec4141;
+    padding: 8px 0 ;
+    font-size: 21px;
+}
+.redes-sociales h4{
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
+.redes-sociales ul li{
+    padding: 8px 0 ;
+    font-size: 18px;
+    
+}
+
+.redes-sociales li:hover *{
+    cursor: pointer;
+    color: #ec4141;
+    padding: 8px 0 ;
+    font-size: 21px;
+}
+
+/* estilo de formulario*/
+#formulario {
+    width: 50%;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    margin-right: 5px;
+  }
+
+  input[type="submit"],
+  input[type="reset"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+  input[type="submit"]:hover,
+  input[type="reset"]:hover {
+    background-color: #45a049;
+  }
