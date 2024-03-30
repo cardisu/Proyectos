@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="styles/styleForm.css">
+    <link rel="shortcut icon" href="images/logo.PNG" type="icono">
+    <script src="https://kit.fontawesome.com/7de16b405b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        
+        <div class="perfil">
+            <div class="header-section">
+                <nav>
+                    <ul>
+                        <li> <a href="#">Descuentos</a></li>
+                        <li><a href="#">Mi lista de deseos</a></li>
+                    </ul>
+                </nav>
+            </div>
+    
+            <div class="header-profile">
+                <div class="profile">
+                    <i class="fa-solid fa-bell" id="logo"></i>
+                    <label for="profile"><a href="formulario.html">Entrar</a></label>
+                </div>
+                <div class="buscar">
+                    <input type="text" name="buscar" id="busqueda" placeholder="Buscar">
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="header-title">
+            <h1>COSPER</h1>
+        </div>
+
+        <div class="header-menu-content">
+            <div class="header-menu">
+                <nav class="menu-1">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="#">Set</a></li>
+                        <li><a href="#">Tratamiento Facial</a></li>
+                        <li><a href="#">Perfumes</a></li>
+                        <li><a href="#">Capilar</a></li>
+                        <li><a href="#">Maquillaje</a></li>
+                        <li><a href="#">Corporal</a></li>
+                        <li><a href="#">Accesorios</a></li>
+                        <select name="moreOption" id="mas">
+                            <option value="hogar">Mas</option>
+                            <option value="hogar">Hogar</option>
+                            <option value="Atencion_al_cliente">Atencion al cliente</option>
+                            <option value="Devoluciones">Devoluciones</option>
+                        </select>
+
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header-subtitle">
+                <p>COMPRA ONLINE Y RETIRA EN TIENDAS SIN COSTO</p>
+                <p>ENVIO A DOMICILIO</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="form-register">
+            <div id="formulario">
+                <H2>REGISTRO</H2>
+                <form action="/submit_form" method="post">
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre" required><br>
+                  
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                  
+                    <label for="mensaje">Mensaje:</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea><br>
+                  
+                    <input type="checkbox" id="suscribirse" name="suscribirse">
+                    <label for="suscribirse">Suscribirse a nuestro boletín</label><br>
+                  
+                    <input type="radio" id="opcion1" name="opcion" value="opcion1">
+                    <label for="opcion1">Opción 1</label><br>
+                    <input type="radio" id="opcion2" name="opcion" value="opcion2">
+                    <label for="opcion2">Opción 2</label><br>
+                  
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpiar">
+                  </form>
+                
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer id="footerPage">
+        <section id="info-cosper">
+            <div class="sobre-nosotros">
+                <h4>Sobre nosotros</h4>
+                <ul>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="#">Terminos y condiciones</a></li>
+                    <li><a href="#">Atencion al cliente</a></li>
+                    <li><a href="#">Envio y devoluciones</a></li>
+                </ul>
+            </div>
+
+            <div class="redes-sociales">
+                <h4>Redes Sociales</h4>
+                <ul>
+                    <li><a href="#">WhatsApp</a></li>
+                    <li><a href="https://www.tiktok.com/@cosmeticosperfumes?is_from_webapp=1&sender_device=pc" target="_blank">Tik Tok</a></li>
+                    <li><a href="https://www.instagram.com/cosper_ecuador?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ul>
+            </div>
+
+        </section>
+    </footer>
+</body>
+</html>
